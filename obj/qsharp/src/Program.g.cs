@@ -26,7 +26,37 @@ namespace FirstQsharp
 
         String ICallable.Name => "HelloQ";
         String ICallable.FullName => "FirstQsharp.HelloQ";
+        protected Allocate Allocate
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> MicrosoftQuantumIntrinsicH
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<Qubit, Result> MicrosoftQuantumIntrinsicM
+        {
+            get;
+            set;
+        }
+
         protected ICallable<String, QVoid> MicrosoftQuantumIntrinsicMessage
+        {
+            get;
+            set;
+        }
+
+        protected Release Release
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<IQArray<Qubit>, QVoid> MicrosoftQuantumIntrinsicResetAll
         {
             get;
             set;
@@ -34,8 +64,42 @@ namespace FirstQsharp
 
         public override Func<QVoid, QVoid> Body => (__in__) =>
         {
+#line hidden
+            {
 #line 8 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
-            MicrosoftQuantumIntrinsicMessage.Apply("Hello quantum world!");
+                var qbits = Allocate.Apply(1L);
+#line hidden
+                System.Runtime.ExceptionServices.ExceptionDispatchInfo __arg1__ = null;
+                try
+                {
+#line 10 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
+                    MicrosoftQuantumIntrinsicH.Apply(qbits[0L]);
+#line 11 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
+                    var r = MicrosoftQuantumIntrinsicM.Apply(qbits[0L]);
+#line 12 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
+                    MicrosoftQuantumIntrinsicMessage.Apply(String.Format("{0}OUTPUT", r));
+#line 13 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
+                    MicrosoftQuantumIntrinsicResetAll.Apply(qbits);
+                }
+#line hidden
+                catch (Exception __arg2__)
+                {
+                    __arg1__ = System.Runtime.ExceptionServices.ExceptionDispatchInfo.Capture(__arg2__);
+                    throw;
+                }
+#line hidden
+                finally
+                {
+                    if (__arg1__ != null)
+                    {
+                        __arg1__.Throw();
+                    }
+
+#line hidden
+                    Release.Apply(qbits);
+                }
+            }
+
 #line hidden
             return QVoid.Instance;
         }
@@ -43,7 +107,12 @@ namespace FirstQsharp
         ;
         public override void Init()
         {
+            this.Allocate = this.Factory.Get<Allocate>(typeof(Microsoft.Quantum.Intrinsic.Allocate));
+            this.MicrosoftQuantumIntrinsicH = this.Factory.Get<IUnitary<Qubit>>(typeof(Microsoft.Quantum.Intrinsic.H));
+            this.MicrosoftQuantumIntrinsicM = this.Factory.Get<ICallable<Qubit, Result>>(typeof(Microsoft.Quantum.Intrinsic.M));
             this.MicrosoftQuantumIntrinsicMessage = this.Factory.Get<ICallable<String, QVoid>>(typeof(Microsoft.Quantum.Intrinsic.Message));
+            this.Release = this.Factory.Get<Release>(typeof(Microsoft.Quantum.Intrinsic.Release));
+            this.MicrosoftQuantumIntrinsicResetAll = this.Factory.Get<ICallable<IQArray<Qubit>, QVoid>>(typeof(Microsoft.Quantum.Intrinsic.ResetAll));
         }
 
         public override IApplyData __dataIn(QVoid data) => data;
