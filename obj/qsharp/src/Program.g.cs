@@ -73,13 +73,39 @@ namespace FirstQsharp
                 try
                 {
 #line 10 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
-                    MicrosoftQuantumIntrinsicH.Apply(qbits[0L]);
+                    var countZero = 0L;
 #line 11 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
-                    var r = MicrosoftQuantumIntrinsicM.Apply(qbits[0L]);
+                    var countone = 1L;
 #line 12 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
-                    MicrosoftQuantumIntrinsicMessage.Apply(String.Format("{0}OUTPUT", r));
-#line 13 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
-                    MicrosoftQuantumIntrinsicResetAll.Apply(qbits);
+                    foreach (var i in new QRange(1L, 1000L))
+#line hidden
+                    {
+#line 14 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
+                        MicrosoftQuantumIntrinsicH.Apply(qbits[0L]);
+#line 15 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
+                        var r = MicrosoftQuantumIntrinsicM.Apply(qbits[0L]);
+#line 16 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
+                        if ((r == Result.Zero))
+                        {
+#line 18 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
+                            countZero = (countZero + 1L);
+                        }
+
+#line 20 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
+                        if ((r == Result.One))
+                        {
+#line 22 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
+                            countone = (countone + 1L);
+                        }
+
+#line 26 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
+                        MicrosoftQuantumIntrinsicResetAll.Apply(qbits);
+                    }
+
+#line 28 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
+                    MicrosoftQuantumIntrinsicMessage.Apply(String.Format("{0} is Zero count", countZero));
+#line 29 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
+                    MicrosoftQuantumIntrinsicMessage.Apply(String.Format("{0} is one count", countone));
                 }
 #line hidden
                 catch (Exception __arg2__)
