@@ -1,0 +1,83 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Ashish\\qdk\\firstQsharp\\FirstQsharp.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Ashish\\qdk\\firstQsharp\\FirstQsharp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ashish\\qdk\\firstQsharp\\FirstQsharp.csproj",
+        "projectName": "FirstQsharp",
+        "projectPath": "C:\\Users\\Ashish\\qdk\\firstQsharp\\FirstQsharp.csproj",
+        "packagesPath": "C:\\Users\\Ashish\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ashish\\qdk\\firstQsharp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Ashish\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.Quantum.CsharpGeneration": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[0.10.2001.2831, )",
+              "autoReferenced": true,
+              "generatePathProperty": true
+            },
+            "Microsoft.Quantum.QSharp.Core": {
+              "target": "Package",
+              "version": "[0.10.2001.2831, )",
+              "generatePathProperty": true
+            },
+            "Microsoft.Quantum.Runtime.Core": {
+              "target": "Package",
+              "version": "[0.10.2001.2831, )",
+              "autoReferenced": true,
+              "generatePathProperty": true
+            },
+            "Microsoft.Quantum.Standard": {
+              "target": "Package",
+              "version": "[0.10.2001.2831, )",
+              "generatePathProperty": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
