@@ -5,29 +5,40 @@
     
 
     operation HelloQ() : Unit {
-       using (qbits = Qubit[1])
+       using (qbits = Qubit[2])
        {
-        mutable countZero = 0;
-        mutable countone=1;
-        for (i in 1 .. 1000)
+        for (i in 1 .. 10)
         {
            H(qbits[0]);
+           CNOT (qbits[0],qbits[1]);
            let r=M(qbits[0]);
-           if(r==Zero)
+           let m= M(qbits[1]);
+          if (r==One)
+          {
+           if(m==Zero)
            {
-             set countZero=countZero+1;  
+            Message ("This is importatnt event");
            }
-            if(r==One)
+            if(m==One)
            {
-               set countone=countone+1;
+               Message ("We got l1 here");
            }
-
-          
+          }
+          if (r==Zero)
+          {
+           if(m==One)
+           {
+            Message ("This is impossible event");
+           }
+            if(m==Zero)
+           {
+               Message ("We got 00 here");
+           }
+          }
+        
            ResetAll(qbits);
        }
-        Message ($"{countZero} is Zero count");
-         Message ($"{countone} is one count");
-    }
+       }
 }
 }
 

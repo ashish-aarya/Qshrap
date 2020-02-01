@@ -32,6 +32,12 @@ namespace FirstQsharp
             set;
         }
 
+        protected IUnitary<(Qubit,Qubit)> MicrosoftQuantumIntrinsicCNOT
+        {
+            get;
+            set;
+        }
+
         protected IUnitary<Qubit> MicrosoftQuantumIntrinsicH
         {
             get;
@@ -67,45 +73,62 @@ namespace FirstQsharp
 #line hidden
             {
 #line 8 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
-                var qbits = Allocate.Apply(1L);
+                var qbits = Allocate.Apply(2L);
 #line hidden
                 System.Runtime.ExceptionServices.ExceptionDispatchInfo __arg1__ = null;
                 try
                 {
 #line 10 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
-                    var countZero = 0L;
-#line 11 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
-                    var countone = 1L;
-#line 12 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
-                    foreach (var i in new QRange(1L, 1000L))
+                    foreach (var i in new QRange(1L, 10L))
 #line hidden
                     {
-#line 14 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
+#line 12 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
                         MicrosoftQuantumIntrinsicH.Apply(qbits[0L]);
-#line 15 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
+#line 13 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
+                        MicrosoftQuantumIntrinsicCNOT.Apply((qbits[0L], qbits[1L]));
+#line 14 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
                         var r = MicrosoftQuantumIntrinsicM.Apply(qbits[0L]);
+#line 15 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
+                        var m = MicrosoftQuantumIntrinsicM.Apply(qbits[1L]);
 #line 16 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
-                        if ((r == Result.Zero))
-                        {
-#line 18 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
-                            countZero = (countZero + 1L);
-                        }
-
-#line 20 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
                         if ((r == Result.One))
                         {
+#line 18 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
+                            if ((m == Result.Zero))
+                            {
+#line 20 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
+                                MicrosoftQuantumIntrinsicMessage.Apply("This is importatnt event");
+                            }
+
 #line 22 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
-                            countone = (countone + 1L);
+                            if ((m == Result.One))
+                            {
+#line 24 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
+                                MicrosoftQuantumIntrinsicMessage.Apply("We got l1 here");
+                            }
                         }
 
-#line 26 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
+#line 27 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
+                        if ((r == Result.Zero))
+                        {
+#line 29 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
+                            if ((m == Result.One))
+                            {
+#line 31 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
+                                MicrosoftQuantumIntrinsicMessage.Apply("This is impossible event");
+                            }
+
+#line 33 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
+                            if ((m == Result.Zero))
+                            {
+#line 35 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
+                                MicrosoftQuantumIntrinsicMessage.Apply("We got 00 here");
+                            }
+                        }
+
+#line 39 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
                         MicrosoftQuantumIntrinsicResetAll.Apply(qbits);
                     }
-
-#line 28 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
-                    MicrosoftQuantumIntrinsicMessage.Apply(String.Format("{0} is Zero count", countZero));
-#line 29 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
-                    MicrosoftQuantumIntrinsicMessage.Apply(String.Format("{0} is one count", countone));
                 }
 #line hidden
                 catch (Exception __arg2__)
@@ -134,6 +157,7 @@ namespace FirstQsharp
         public override void Init()
         {
             this.Allocate = this.Factory.Get<Allocate>(typeof(Microsoft.Quantum.Intrinsic.Allocate));
+            this.MicrosoftQuantumIntrinsicCNOT = this.Factory.Get<IUnitary<(Qubit,Qubit)>>(typeof(Microsoft.Quantum.Intrinsic.CNOT));
             this.MicrosoftQuantumIntrinsicH = this.Factory.Get<IUnitary<Qubit>>(typeof(Microsoft.Quantum.Intrinsic.H));
             this.MicrosoftQuantumIntrinsicM = this.Factory.Get<ICallable<Qubit, Result>>(typeof(Microsoft.Quantum.Intrinsic.M));
             this.MicrosoftQuantumIntrinsicMessage = this.Factory.Get<ICallable<String, QVoid>>(typeof(Microsoft.Quantum.Intrinsic.Message));
