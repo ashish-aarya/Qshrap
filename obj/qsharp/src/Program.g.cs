@@ -14,10 +14,18 @@ using Microsoft.Quantum.Simulation.Core;
 
 [assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"FirstQsharp\",\"Name\":\"HelloQ\"},\"Attributes\":[],\"SourceFile\":\"C:/Users/Ashish/qdk/firstQsharp/Program.qs\",\"Position\":{\"Item1\":6,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":17}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"UnitType\"},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
 [assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"FirstQsharp\",\"Name\":\"HelloQ\"},\"Attributes\":[],\"SourceFile\":\"C:/Users/Ashish/qdk/firstQsharp/Program.qs\",\"Position\":{\"Item1\":6,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":17}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"FirstQsharp\",\"Name\":\"BalancedSame\"},\"Attributes\":[],\"SourceFile\":\"C:/Users/Ashish/qdk/firstQsharp/Program.qs\",\"Position\":{\"Item1\":29,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":23}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"qbits\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":25},\"Item2\":{\"Line\":1,\"Column\":30}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"FirstQsharp\",\"Name\":\"BalancedSame\"},\"Attributes\":[],\"SourceFile\":\"C:/Users/Ashish/qdk/firstQsharp/Program.qs\",\"Position\":{\"Item1\":29,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":23}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"FirstQsharp\",\"Name\":\"BalancedOppsite\"},\"Attributes\":[],\"SourceFile\":\"C:/Users/Ashish/qdk/firstQsharp/Program.qs\",\"Position\":{\"Item1\":34,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":26}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"qbits\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":28},\"Item2\":{\"Line\":1,\"Column\":33}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"FirstQsharp\",\"Name\":\"BalancedOppsite\"},\"Attributes\":[],\"SourceFile\":\"C:/Users/Ashish/qdk/firstQsharp/Program.qs\",\"Position\":{\"Item1\":34,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":26}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"FirstQsharp\",\"Name\":\"ConstantZero\"},\"Attributes\":[],\"SourceFile\":\"C:/Users/Ashish/qdk/firstQsharp/Program.qs\",\"Position\":{\"Item1\":39,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":23}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"qbits\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":25},\"Item2\":{\"Line\":1,\"Column\":30}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"FirstQsharp\",\"Name\":\"ConstantZero\"},\"Attributes\":[],\"SourceFile\":\"C:/Users/Ashish/qdk/firstQsharp/Program.qs\",\"Position\":{\"Item1\":39,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":23}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"FirstQsharp\",\"Name\":\"ConstantOne\"},\"Attributes\":[],\"SourceFile\":\"C:/Users/Ashish/qdk/firstQsharp/Program.qs\",\"Position\":{\"Item1\":43,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":22}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"qbits\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":24},\"Item2\":{\"Line\":1,\"Column\":29}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"FirstQsharp\",\"Name\":\"ConstantOne\"},\"Attributes\":[],\"SourceFile\":\"C:/Users/Ashish/qdk/firstQsharp/Program.qs\",\"Position\":{\"Item1\":43,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":22}},\"Documentation\":[]}")]
 #line hidden
 namespace FirstQsharp
 {
-    [SourceLocation("C:/Users/Ashish/qdk/firstQsharp/Program.qs", OperationFunctor.Body, 7, -1)]
+    [SourceLocation("C:/Users/Ashish/qdk/firstQsharp/Program.qs", OperationFunctor.Body, 7, 30)]
     public partial class HelloQ : Operation<QVoid, QVoid>, ICallable
     {
         public HelloQ(IOperationFactory m) : base(m)
@@ -26,13 +34,13 @@ namespace FirstQsharp
 
         String ICallable.Name => "HelloQ";
         String ICallable.FullName => "FirstQsharp.HelloQ";
-        protected Allocate Allocate
+        protected ICallable<IQArray<Qubit>, QVoid> BalancedSame
         {
             get;
             set;
         }
 
-        protected IUnitary<(Qubit,Qubit)> MicrosoftQuantumIntrinsicCNOT
+        protected Allocate Allocate
         {
             get;
             set;
@@ -68,6 +76,12 @@ namespace FirstQsharp
             set;
         }
 
+        protected IUnitary<Qubit> MicrosoftQuantumIntrinsicX
+        {
+            get;
+            set;
+        }
+
         public override Func<QVoid, QVoid> Body => (__in__) =>
         {
 #line hidden
@@ -85,48 +99,30 @@ namespace FirstQsharp
 #line 12 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
                         MicrosoftQuantumIntrinsicH.Apply(qbits[0L]);
 #line 13 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
-                        MicrosoftQuantumIntrinsicCNOT.Apply((qbits[0L], qbits[1L]));
+                        MicrosoftQuantumIntrinsicX.Apply(qbits[1L]);
 #line 14 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
-                        var r = MicrosoftQuantumIntrinsicM.Apply(qbits[0L]);
+                        MicrosoftQuantumIntrinsicH.Apply(qbits[1L]);
 #line 15 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
-                        var m = MicrosoftQuantumIntrinsicM.Apply(qbits[1L]);
+                        BalancedSame.Apply(qbits);
 #line 16 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
-                        if ((r == Result.One))
-                        {
+                        MicrosoftQuantumIntrinsicH.Apply(qbits[0L]);
+#line 17 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
+                        var m = MicrosoftQuantumIntrinsicM.Apply(qbits[0L]);
 #line 18 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
-                            if ((m == Result.Zero))
-                            {
+                        if ((m == Result.One))
+                        {
 #line 20 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
-                                MicrosoftQuantumIntrinsicMessage.Apply("This is importatnt event");
-                            }
+                            MicrosoftQuantumIntrinsicMessage.Apply("This is Balanced");
+                        }
 
 #line 22 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
-                            if ((m == Result.One))
-                            {
-#line 24 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
-                                MicrosoftQuantumIntrinsicMessage.Apply("We got l1 here");
-                            }
-                        }
-
-#line 27 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
-                        if ((r == Result.Zero))
+                        if ((m == Result.Zero))
                         {
-#line 29 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
-                            if ((m == Result.One))
-                            {
-#line 31 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
-                                MicrosoftQuantumIntrinsicMessage.Apply("This is impossible event");
-                            }
-
-#line 33 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
-                            if ((m == Result.Zero))
-                            {
-#line 35 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
-                                MicrosoftQuantumIntrinsicMessage.Apply("We got 00 here");
-                            }
+#line 24 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
+                            MicrosoftQuantumIntrinsicMessage.Apply("This is Constant");
                         }
 
-#line 39 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
+#line 26 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
                         MicrosoftQuantumIntrinsicResetAll.Apply(qbits);
                     }
                 }
@@ -156,13 +152,14 @@ namespace FirstQsharp
         ;
         public override void Init()
         {
+            this.BalancedSame = this.Factory.Get<ICallable<IQArray<Qubit>, QVoid>>(typeof(BalancedSame));
             this.Allocate = this.Factory.Get<Allocate>(typeof(Microsoft.Quantum.Intrinsic.Allocate));
-            this.MicrosoftQuantumIntrinsicCNOT = this.Factory.Get<IUnitary<(Qubit,Qubit)>>(typeof(Microsoft.Quantum.Intrinsic.CNOT));
             this.MicrosoftQuantumIntrinsicH = this.Factory.Get<IUnitary<Qubit>>(typeof(Microsoft.Quantum.Intrinsic.H));
             this.MicrosoftQuantumIntrinsicM = this.Factory.Get<ICallable<Qubit, Result>>(typeof(Microsoft.Quantum.Intrinsic.M));
             this.MicrosoftQuantumIntrinsicMessage = this.Factory.Get<ICallable<String, QVoid>>(typeof(Microsoft.Quantum.Intrinsic.Message));
             this.Release = this.Factory.Get<Release>(typeof(Microsoft.Quantum.Intrinsic.Release));
             this.MicrosoftQuantumIntrinsicResetAll = this.Factory.Get<ICallable<IQArray<Qubit>, QVoid>>(typeof(Microsoft.Quantum.Intrinsic.ResetAll));
+            this.MicrosoftQuantumIntrinsicX = this.Factory.Get<IUnitary<Qubit>>(typeof(Microsoft.Quantum.Intrinsic.X));
         }
 
         public override IApplyData __dataIn(QVoid data) => data;
@@ -170,6 +167,158 @@ namespace FirstQsharp
         public static System.Threading.Tasks.Task<QVoid> Run(IOperationFactory __m__)
         {
             return __m__.Run<HelloQ, QVoid, QVoid>(QVoid.Instance);
+        }
+    }
+
+    [SourceLocation("C:/Users/Ashish/qdk/firstQsharp/Program.qs", OperationFunctor.Body, 30, 35)]
+    public partial class BalancedSame : Operation<IQArray<Qubit>, QVoid>, ICallable
+    {
+        public BalancedSame(IOperationFactory m) : base(m)
+        {
+        }
+
+        String ICallable.Name => "BalancedSame";
+        String ICallable.FullName => "FirstQsharp.BalancedSame";
+        protected IUnitary<(Qubit,Qubit)> MicrosoftQuantumIntrinsicCNOT
+        {
+            get;
+            set;
+        }
+
+        public override Func<IQArray<Qubit>, QVoid> Body => (__in__) =>
+        {
+            var qbits = __in__;
+#line 33 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
+            MicrosoftQuantumIntrinsicCNOT.Apply((qbits[0L], qbits[1L]));
+#line hidden
+            return QVoid.Instance;
+        }
+
+        ;
+        public override void Init()
+        {
+            this.MicrosoftQuantumIntrinsicCNOT = this.Factory.Get<IUnitary<(Qubit,Qubit)>>(typeof(Microsoft.Quantum.Intrinsic.CNOT));
+        }
+
+        public override IApplyData __dataIn(IQArray<Qubit> data) => data;
+        public override IApplyData __dataOut(QVoid data) => data;
+        public static System.Threading.Tasks.Task<QVoid> Run(IOperationFactory __m__, IQArray<Qubit> qbits)
+        {
+            return __m__.Run<BalancedSame, IQArray<Qubit>, QVoid>(qbits);
+        }
+    }
+
+    [SourceLocation("C:/Users/Ashish/qdk/firstQsharp/Program.qs", OperationFunctor.Body, 35, 40)]
+    public partial class BalancedOppsite : Operation<IQArray<Qubit>, QVoid>, ICallable
+    {
+        public BalancedOppsite(IOperationFactory m) : base(m)
+        {
+        }
+
+        String ICallable.Name => "BalancedOppsite";
+        String ICallable.FullName => "FirstQsharp.BalancedOppsite";
+        protected IUnitary<(Qubit,Qubit)> MicrosoftQuantumIntrinsicCNOT
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> MicrosoftQuantumIntrinsicX
+        {
+            get;
+            set;
+        }
+
+        public override Func<IQArray<Qubit>, QVoid> Body => (__in__) =>
+        {
+            var qbits = __in__;
+#line 37 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
+            MicrosoftQuantumIntrinsicX.Apply(qbits[1L]);
+#line 38 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
+            MicrosoftQuantumIntrinsicCNOT.Apply((qbits[0L], qbits[1L]));
+#line hidden
+            return QVoid.Instance;
+        }
+
+        ;
+        public override void Init()
+        {
+            this.MicrosoftQuantumIntrinsicCNOT = this.Factory.Get<IUnitary<(Qubit,Qubit)>>(typeof(Microsoft.Quantum.Intrinsic.CNOT));
+            this.MicrosoftQuantumIntrinsicX = this.Factory.Get<IUnitary<Qubit>>(typeof(Microsoft.Quantum.Intrinsic.X));
+        }
+
+        public override IApplyData __dataIn(IQArray<Qubit> data) => data;
+        public override IApplyData __dataOut(QVoid data) => data;
+        public static System.Threading.Tasks.Task<QVoid> Run(IOperationFactory __m__, IQArray<Qubit> qbits)
+        {
+            return __m__.Run<BalancedOppsite, IQArray<Qubit>, QVoid>(qbits);
+        }
+    }
+
+    [SourceLocation("C:/Users/Ashish/qdk/firstQsharp/Program.qs", OperationFunctor.Body, 40, 44)]
+    public partial class ConstantZero : Operation<IQArray<Qubit>, QVoid>, ICallable
+    {
+        public ConstantZero(IOperationFactory m) : base(m)
+        {
+        }
+
+        String ICallable.Name => "ConstantZero";
+        String ICallable.FullName => "FirstQsharp.ConstantZero";
+        public override Func<IQArray<Qubit>, QVoid> Body => (__in__) =>
+        {
+            var qbits = __in__;
+#line hidden
+            return QVoid.Instance;
+        }
+
+        ;
+        public override void Init()
+        {
+        }
+
+        public override IApplyData __dataIn(IQArray<Qubit> data) => data;
+        public override IApplyData __dataOut(QVoid data) => data;
+        public static System.Threading.Tasks.Task<QVoid> Run(IOperationFactory __m__, IQArray<Qubit> qbits)
+        {
+            return __m__.Run<ConstantZero, IQArray<Qubit>, QVoid>(qbits);
+        }
+    }
+
+    [SourceLocation("C:/Users/Ashish/qdk/firstQsharp/Program.qs", OperationFunctor.Body, 44, -1)]
+    public partial class ConstantOne : Operation<IQArray<Qubit>, QVoid>, ICallable
+    {
+        public ConstantOne(IOperationFactory m) : base(m)
+        {
+        }
+
+        String ICallable.Name => "ConstantOne";
+        String ICallable.FullName => "FirstQsharp.ConstantOne";
+        protected IUnitary<Qubit> MicrosoftQuantumIntrinsicX
+        {
+            get;
+            set;
+        }
+
+        public override Func<IQArray<Qubit>, QVoid> Body => (__in__) =>
+        {
+            var qbits = __in__;
+#line 46 "C:/Users/Ashish/qdk/firstQsharp/Program.qs"
+            MicrosoftQuantumIntrinsicX.Apply(qbits[1L]);
+#line hidden
+            return QVoid.Instance;
+        }
+
+        ;
+        public override void Init()
+        {
+            this.MicrosoftQuantumIntrinsicX = this.Factory.Get<IUnitary<Qubit>>(typeof(Microsoft.Quantum.Intrinsic.X));
+        }
+
+        public override IApplyData __dataIn(IQArray<Qubit> data) => data;
+        public override IApplyData __dataOut(QVoid data) => data;
+        public static System.Threading.Tasks.Task<QVoid> Run(IOperationFactory __m__, IQArray<Qubit> qbits)
+        {
+            return __m__.Run<ConstantOne, IQArray<Qubit>, QVoid>(qbits);
         }
     }
 }

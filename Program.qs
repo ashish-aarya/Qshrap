@@ -7,38 +7,46 @@
     operation HelloQ() : Unit {
        using (qbits = Qubit[2])
        {
-        for (i in 1 .. 10)
-        {
-           H(qbits[0]);
-           CNOT (qbits[0],qbits[1]);
-           let r=M(qbits[0]);
-           let m= M(qbits[1]);
-          if (r==One)
-          {
-           if(m==Zero)
+           for(i in 1 .. 10)
            {
-            Message ("This is importatnt event");
+             H(qbits[0]);
+             X (qbits[1]);
+             H (qbits[1]);
+             BalancedSame(qbits);
+             H(qbits[0]);
+             let m=M (qbits[0]);
+             if(m==One)
+             {
+                 Message("This is Balanced");
+             }
+             if (m==Zero)
+             {
+                 Message("This is Constant");
+             }
+         ResetAll(qbits);
            }
-            if(m==One)
-           {
-               Message ("We got l1 here");
-           }
-          }
-          if (r==Zero)
-          {
-           if(m==One)
-           {
-            Message ("This is impossible event");
-           }
-            if(m==Zero)
-           {
-               Message ("We got 00 here");
-           }
-          }
-        
-           ResetAll(qbits);
        }
-       }
+    }
+    operation BalancedSame (qbits: Qubit[] ):Unit
+{
+  
+    CNOT(qbits[0],qbits[1]);
 }
+operation BalancedOppsite (qbits: Qubit[] ):Unit
+{
+  X(qbits[1]);
+    CNOT(qbits[0],qbits[1]);
 }
+operation ConstantZero (qbits : Qubit[]):Unit
+{
+}
+
+operation ConstantOne (qbits : Qubit[] ):Unit
+{
+    X(qbits[1]);
+}
+
+}
+
+
 
